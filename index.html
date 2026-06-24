@@ -1,164 +1,511 @@
 <!DOCTYPE html>
-<html  lang="en">
+<html lang="en">
 <head>
-   <meta charset="utf-8">
-	<title>Personal Portfolio</title>
-	<meta name="description" content="">  
-	<meta name="author" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <link rel="stylesheet" href="style.css">
-  	<link rel="icon" type="image/png" href="icons8-portofolio-96.png">
-    <script src="https://kit.fontawesome.com/24dce9e676.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eyobel Zeleke Berie | Embedded AI Engineer & Full-Stack Systems Developer</title>
+  <meta name="description" content="Portfolio of Eyobel Zeleke Berie — Embedded AI Engineer and Full-Stack Systems Developer bridging low-level embedded systems with cloud solutions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<body >
-   <section id="intro">   
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#hero">EZ</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="mailto:eyobelzeleke@gmail.com">Hire Me</a>
+  </div>
+</nav>
 
-   	<div class="intro-overlay"></div>	
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="pulse-dot"></span>
+      Open to opportunities
+    </div>
+    <h1 class="hero-title">
+      <span class="hero-greeting">Hello, I'm</span>
+      <span class="hero-name">Eyobel Zeleke Berie</span>
+    </h1>
+    <p class="hero-role">Embedded AI Engineer <span class="role-sep">|</span> Full-Stack Systems Developer</p>
+    <p class="hero-sub">Computer Engineering graduate with hands-on experience bridging low-level embedded systems with cloud-connected full-stack solutions.</p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">View My Work</a>
+      <a href="#about" class="btn-ghost">About Me</a>
+    </div>
+    <div class="hero-socials">
+      <a href="https://github.com/SCIFI-Shinobi" target="_blank" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+      </a>
+      <a href="https://x.com/EyobelZ" target="_blank" aria-label="X / Twitter">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/eyobel_z/" target="_blank" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="hero-photo-wrap">
+    <div class="hero-photo-ring"></div>
+    <img id="profile-img" src="images/BDU1405811.JPG.jpg" alt="Eyobel Zeleke Berie" class="hero-photo">
+    <div class="hero-photo-glow"></div>
+  </div>
+  <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 10l5 5 5-5"/></svg>
+  </a>
+</section>
 
-   	<div class="intro-content">
-   		<div class="row">
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="section-label">About Me</div>
+    <h2 class="section-title">My Story</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="about-lead">My name is <strong>Eyobel Zeleke Berie</strong> — a Computer Engineering graduate with a deep passion for bridging low-level embedded systems with cloud-connected full-stack solutions.</p>
+        <p>I have hands-on experience building and deploying production-grade applications ranging from TinyML plant health monitoring on resource-constrained hardware to RESTful backends and responsive marketplace platforms. What began as a deep curiosity about systems has grown into professional expertise in bridging hardware and software.</p>
+        <p>I hold a B.Sc. in Computer Engineering from Bahir Dar University. I also completed a B.A. in Accounting and Finance — a background that gives me a practical lens for building technology that solves real business problems.</p>
+        <div class="about-meta">
+          <div class="meta-item"><span class="meta-label">Location</span><span class="meta-val">Ethiopia 🇪🇹</span></div>
+          <div class="meta-item"><span class="meta-label">Role</span><span class="meta-val">Embedded AI &amp; Full-Stack</span></div>
+          <div class="meta-item"><span class="meta-label">Email</span><span class="meta-val">eyobelzeleke@gmail.com</span></div>
+          <div class="meta-item"><span class="meta-label">Born</span><span class="meta-val">July 1, 2002</span></div>
+        </div>
+        <a href="mailto:eyobelzeleke@gmail.com" class="btn-primary" style="display:inline-flex;margin-top:2rem;">Let's Connect</a>
+      </div>
+      <div class="about-passion">
+        <div class="passion-card">
+          <div class="passion-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="2" /><path d="M9 9h6v6H9z M9 1v3 M15 1v3 M9 20v3 M15 20v3 M20 9h3 M20 15h3 M1 9h3 M1 15h3" /></svg>
+          </div>
+          <h3>Embedded AI &amp; TinyML</h3>
+          <p>Deploying intelligent models at the edge on resource-constrained microcontrollers like Arduino BLE Sense.</p>
+        </div>
+        <div class="passion-card">
+          <div class="passion-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+          </div>
+          <h3>Systems Programming</h3>
+          <p>Deep familiarity with C/C++, memory constraints, system-level design, and optimized edge constraints.</p>
+        </div>
+        <div class="passion-card">
+          <div class="passion-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="5" rx="1"/><rect x="2" y="11" width="20" height="5" rx="1"/><rect x="2" y="19" width="20" height="5" rx="1"/><path d="M6 5.5h.01M6 13.5h.01M6 21.5h.01"/></svg>
+          </div>
+          <h3>Full-Stack Systems</h3>
+          <p>Engineering RESTful backends (FastAPI, Spring Boot, PostgreSQL) and responsive dashboards (React).</p>
+        </div>
+        <div class="passion-card">
+          <div class="passion-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3.055 11H5a2 2 0 0 1 2 2v1a2 2 0 0 0 2 2 2 2 0 0 1 2 2v2.945M8 3.935V5.5A2.5 2.5 0 0 0 10.5 8h.5a2 2 0 0 1 2 2 2 2 0 1 0 4 0 2 2 0 0 1 2-2h1.064M15 20.488V18a2 2 0 0 1 2-2h3.064M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+          </div>
+          <h3>Real-World Impact</h3>
+          <p>Combining engineering discipline with business logic to build technology that impacts communities.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-   			<div class="col-twelve">
+<!-- EXPERIENCE & EDUCATION -->
+<section id="experience">
+  <div class="container">
+    <div class="section-label">Journey</div>
+    <h2 class="section-title">Experience &amp; Education</h2>
+    
+    <div class="resume-grid">
+      <!-- Left Column: Work Experience -->
+      <div class="resume-column">
+        <h3 class="resume-column-title">Work Experience</h3>
+        
+        <div class="resume-card">
+          <div class="resume-card-header">
+            <div class="resume-card-title-group">
+              <span class="resume-card-title">Lead Developer</span>
+              <span class="resume-card-org">MangoGuard</span>
+            </div>
+            <span class="resume-card-date">Aug 2025 – May 2026</span>
+          </div>
+          <div class="resume-card-desc">
+            Architected and deployed a production TinyML plant health monitoring system for real-time agricultural disease detection on Arduino Nano 33 BLE Sense.
+            <ul>
+              <li>Built end-to-end system: MobileNetV1 edge inference &rarr; Raspberry Pi UART gateway &rarr; FastAPI backend &rarr; React dashboard.</li>
+              <li>Optimized RAM allocation, implemented LGBM disease forecasting model, and resolved critical embedded constraints.</li>
+            </ul>
+          </div>
+        </div>
 
-	   			<h5>Hello, World.</h5>
-	   			<h1>I'm Eyobel.</h1>
+        <div class="resume-card">
+          <div class="resume-card-header">
+            <div class="resume-card-title-group">
+              <span class="resume-card-title">Backend Developer</span>
+              <span class="resume-card-org">Hotel Management System</span>
+            </div>
+            <span class="resume-card-date">Dec 2024 – Jan 2025</span>
+          </div>
+          <div class="resume-card-desc">
+            Engineered RESTful backend with Spring Boot &amp; PostgreSQL for booking, room management, and user role authorization.
+            <ul>
+              <li>Implemented JWT authentication and secure session management.</li>
+              <li>Designed modular database schema with robust data integrity and access controls.</li>
+            </ul>
+          </div>
+        </div>
 
-	   			<p class="intro-position">
-	   				<span>Front-end Developer</span>
-	 			</p>
+        <div class="resume-card">
+          <div class="resume-card-header">
+            <div class="resume-card-title-group">
+              <span class="resume-card-title">Front-End Developer</span>
+              <span class="resume-card-org">Wubet Digital Platform</span>
+            </div>
+            <span class="resume-card-date">Sep 2024 – Nov 2024</span>
+          </div>
+          <div class="resume-card-desc">
+            Built responsive MVP marketplace connecting Ethiopian fashion designers with global clients using React and WooCommerce.
+            <ul>
+              <li>Designed auth flows, product showcase interfaces, and integrated payment features.</li>
+              <li>Optimized frontend assets and API queries for fast client-side performance.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+      <!-- Right Column: Education & Languages -->
+      <div class="resume-column">
+        <h3 class="resume-column-title">Education</h3>
+        
+        <div class="resume-card">
+          <div class="resume-card-header">
+            <div class="resume-card-title-group">
+              <span class="resume-card-title">B.Sc. Electrical and Computer Engineering</span>
+              <span class="resume-card-org">Bahir Dar University</span>
+            </div>
+            <span class="resume-card-date">Graduated 2026</span>
+          </div>
+          <div class="resume-card-desc">
+            Focused on hardware-software codesign, embedded systems, TinyML, digital logic design, and computer architecture.
+          </div>
+        </div>
 
-	   		</div>  
-   			
-   		</div>   		 		
-   	</div> <!-- /intro-content --> 
+        <div class="resume-card" style="opacity: 0.75;">
+          <div class="resume-card-header">
+            <div class="resume-card-title-group">
+              <span class="resume-card-title" style="font-size: 0.95rem;">B.A. Accounting &amp; Finance</span>
+              <span class="resume-card-org">Blue Mark College</span>
+            </div>
+            <span class="resume-card-date">Graduated 2026</span>
+          </div>
+          <div class="resume-card-desc" style="font-size: 0.85rem;">
+            Complementary degree providing business and financial acumen alongside my engineering background.
+          </div>
+        </div>
 
-   	<ul class="intro-social">        
-         <li><a href="https://x.com/EyobelZ?t=3Zl1nRBFTGF4K7sWwz9SXQ&s=09"><i class="fa-brands fa-x-twitter"></i></a></li>
-         <li><a href="https://www.instagram.com/ramenninja_0?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a></li>
-         <li><a href="https://github.com/SCIFI-Shinobi"><i class="fa-brands fa-github"></i></a></li>
-      </ul> <!-- /intro-social -->      	
+        <h3 class="resume-column-title" style="margin-top: 2.5rem;">Languages</h3>
+        <div class="resume-card">
+          <div class="resume-card-desc" style="display: flex; gap: 2rem; justify-content: space-around; text-align: center;">
+            <div>
+              <strong style="color: var(--text); display: block; font-size: 1.1rem; margin-bottom: 0.25rem;">Amharic</strong>
+              <span style="font-size: 0.85rem; color: var(--primary2);">Native Speaker</span>
+            </div>
+            <div style="width: 1px; background: var(--border); align-self: stretch;"></div>
+            <div>
+              <strong style="color: var(--text); display: block; font-size: 1.1rem; margin-bottom: 0.25rem;">English</strong>
+              <span style="font-size: 0.85rem; color: var(--primary2);">Fluent / Professional</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-   </section> <!-- /intro -->
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="section-label">Expertise</div>
+    <h2 class="section-title">Skills & Technologies</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-top">
+          <span class="skill-name">Python</span>
+          <span class="skill-pct">90%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="--pct:90%"></div></div>
+        <p class="skill-desc">ML pipelines, data processing, scripting, backend automation.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-top">
+          <span class="skill-name">C / C++</span>
+          <span class="skill-pct">90%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="--pct:90%"></div></div>
+        <p class="skill-desc">Systems programming, OOP, memory management, embedded logic.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-top">
+          <span class="skill-name">Arduino</span>
+          <span class="skill-pct">90%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="--pct:90%"></div></div>
+        <p class="skill-desc">Embedded firmware, sensor integration, TinyML on edge hardware.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-top">
+          <span class="skill-name">React</span>
+          <span class="skill-pct">70%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="--pct:70%"></div></div>
+        <p class="skill-desc">Component-based UIs, state management, dashboard development.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-top">
+          <span class="skill-name">FastAPI</span>
+          <span class="skill-pct">85%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="--pct:85%"></div></div>
+        <p class="skill-desc">High-performance REST APIs, async endpoints, Pydantic schemas.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-top">
+          <span class="skill-name">PostgreSQL</span>
+          <span class="skill-pct">65%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="--pct:65%"></div></div>
+        <p class="skill-desc">Relational schema design, query optimization, data integrity.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-top">
+          <span class="skill-name">RESTful APIs</span>
+          <span class="skill-pct">70%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="--pct:70%"></div></div>
+        <p class="skill-desc">API design, JWT auth, versioning, integration &amp; documentation.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-top">
+          <span class="skill-name">Git</span>
+          <span class="skill-pct">90%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="--pct:90%"></div></div>
+        <p class="skill-desc">Version control, branching strategies, collaborative workflows.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-top">
+          <span class="skill-name">Linux</span>
+          <span class="skill-pct">85%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="--pct:85%"></div></div>
+        <p class="skill-desc">Shell scripting, system administration, server configuration.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-top">
+          <span class="skill-name">Docker</span>
+          <span class="skill-pct">70%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="--pct:70%"></div></div>
+        <p class="skill-desc">Containerization, image builds, multi-service deployments.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-top">
+          <span class="skill-name">Java</span>
+          <span class="skill-pct">65%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="--pct:65%"></div></div>
+        <p class="skill-desc">Spring Boot backends, OOP design, enterprise application patterns.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-top">
+          <span class="skill-name">JavaScript</span>
+          <span class="skill-pct">70%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" style="--pct:70%"></div></div>
+        <p class="skill-desc">DOM manipulation, async programming, API integration.</p>
+      </div>
+    </div>
 
 
-   <!-- about section
-   ================================================== -->
-   <section id="about">  
+  </div>
+</section>
 
-   	<div class="row section-intro">
-   		<div class="col-twelve">
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="section-label">Work</div>
+    <h2 class="section-title">GitHub Projects</h2>
+    <p class="section-sub">A showcase of things I've built — from web apps to systems programming.</p>
+    <!-- Projects are loaded dynamically from GitHub API -->
+    <div id="projects-grid" class="projects-grid">
+      <!-- Skeleton loaders shown while fetching -->
+      <div class="project-card skeleton-card"><div class="sk-tag"></div><div class="sk-title"></div><div class="sk-line"></div><div class="sk-line sk-short"></div><div class="sk-chips"></div></div>
+      <div class="project-card skeleton-card"><div class="sk-tag"></div><div class="sk-title"></div><div class="sk-line"></div><div class="sk-line sk-short"></div><div class="sk-chips"></div></div>
+      <div class="project-card skeleton-card"><div class="sk-tag"></div><div class="sk-title"></div><div class="sk-line"></div><div class="sk-line sk-short"></div><div class="sk-chips"></div></div>
+      <div class="project-card skeleton-card"><div class="sk-tag"></div><div class="sk-title"></div><div class="sk-line"></div><div class="sk-line sk-short"></div><div class="sk-chips"></div></div>
+    </div>
+    <div class="projects-footer">
+      <a href="https://github.com/SCIFI-Shinobi" target="_blank" class="btn-ghost">See All on GitHub →</a>
+    </div>
+  </div>
+</section>
 
-   			<h5>About</h5>
-   			<h1>Let me introduce myself.</h1>
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-card">
+      <div class="section-label">Contact</div>
+      <h2 class="section-title">Let's Build Something</h2>
+      <p class="contact-sub">I'm open to freelance projects, collaborations, and full-time opportunities. If you have an idea or a role in mind — reach out, I'd love to talk.</p>
+      <div class="contact-links">
+        <a href="mailto:eyobelzeleke@gmail.com" class="btn-primary contact-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          eyobelzeleke@gmail.com
+        </a>
+        <a href="https://github.com/SCIFI-Shinobi" target="_blank" class="btn-ghost contact-btn">GitHub Profile</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-   			<div class="intro-info">
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Eyobel Zeleke Berie · Built with passion from Ethiopia 🇪🇹</p>
+</footer>
 
-   				<img src="images/profile-pic.jpg" alt="Profile Picture">
+<script>
+// Scroll-based nav highlight
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+const navbar = document.getElementById('navbar');
 
-   				<p class="lead">My name is Eyobel Zeleke and I’m an aspiring computer engineer from Ethiopia. I come from an agricultural community where technology skills offer an opportunity for greater impact. Although the recent conflicts in my region temporarily disrupted my university studies, I remains committed to pursuing my dreams in software development. Despite the challenges, I took it upon myself to learn skills in programming. What began as a passion has transformed into expertise I now hope to offer tech companies. I believe resilience is rising to turn obstacles into fresh starts—that mindset empowers me as I take this next step.</div>   			
+window.addEventListener('scroll', () => {
+  const y = window.scrollY;
+  navbar.classList.toggle('scrolled', y > 60);
 
-   		</div>   		
-   	</div> <!-- /section-intro -->
+  let current = '';
+  sections.forEach(s => {
+    if (y >= s.offsetTop - 120) current = s.id;
+  });
+  navLinks.forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+  });
+});
 
-   	<div class="row about-content">
+// Animate skill bars on scroll
+const skillFills = document.querySelectorAll('.skill-fill');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.width = e.target.style.getPropertyValue('--pct');
+      observer.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.3 });
+skillFills.forEach(f => { f.style.width = '0'; observer.observe(f); });
 
-   		<div class="col-six tab-full">
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    const t = document.querySelector(a.getAttribute('href'));
+    if (t) t.scrollIntoView({ behavior: 'smooth' });
+  });
+});
 
-   			<h3>Profile</h3>
-   			<p>A determined, self-taught developer and aspiring computer engineer who channeled resilience and scarce resources into valuable skills. Built creative problem-solving abilities, communication strengths and nimble technical expertise through overcoming challenges in pursuing programming education.</p>
+// Project card hover tilt — works on dynamically created cards too
+function applyCardTilt(card) {
+  card.addEventListener('mousemove', e => {
+    const r = card.getBoundingClientRect();
+    const x = ((e.clientX - r.left) / r.width - 0.5) * 8;
+    const y = ((e.clientY - r.top) / r.height - 0.5) * -8;
+    card.style.transform = `perspective(800px) rotateY(${x}deg) rotateX(${y}deg) translateY(-4px)`;
+  });
+  card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+}
 
-   			<ul class="info-list">
-   				<li>
-   					<strong>Fullname:</strong>
-   					<span>Eyobel Zeleke Berie</span>
-   				</li>
-   				<li>
-   					<strong>Birth Date:</strong>
-   					<span>july 1, 2002</span>
-   				</li>
-   				<li>
-   					<strong>Job:</strong>
-   					<span>Freelancer, Frontend Developer</span>
-   				</li>
-   				<li>
-   					<strong>Email:</strong>
-   					<span>eyobelzeleke@gmail.com</span>
-   				</li>
+// ── GitHub Projects ──────────────────────────────────────────────────────────
+const GITHUB_USER    = 'SCIFI-Shinobi';
+const FEATURED_REPO  = 'Intelligent-Mango-Health-Monitoring';
 
-   			</ul> <!-- /info-list -->
+const EXTERNAL_SVG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>`;
+const STAR_SVG     = `<svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12" style="vertical-align:-1px;margin-right:2px"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>`;
 
-   		</div>
+function fmtName(n) {
+  return n.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+}
 
-   		<div class="col-six tab-full">
+function buildCard(repo, featured = false) {
+  const card   = document.createElement('div');
+  card.className = 'project-card' + (featured ? ' featured' : '');
 
-   			<h3>Skills</h3>
-   			<p>Programming Languages: Proficient in C++, including object-oriented concepts and data structures. Quickly learned HTML/CSS and JavaScript to build responsive websites and web applications.
+  const lang  = repo.language || 'Code';
+  const tag   = featured ? `Featured · ${lang}` : lang;
+  const desc  = repo.description || 'Explore this project on GitHub.';
+  const href  = (repo.homepage && repo.homepage.startsWith('http'))
+                  ? repo.homepage : repo.html_url;
 
-				Search Optimization: Researched and implemented best practices in SEO techniques to improve online content visibility. Focused on maximizing site architecture, speed, and keywords based on search ranking factors.
-				
-				Additional Strengths: dedication to self-driven learning, resourcefulness in finding educational opportunities. Ability to master new programming tools through disciplined study and experimentation with code.</p>
+  const chips = [lang];
+  if (repo.license && repo.license.spdx_id !== 'NOASSERTION') chips.push(repo.license.spdx_id);
+  if (repo.stargazers_count > 0) chips.push(`${STAR_SVG}${repo.stargazers_count}`);
+  if (repo.forks_count > 0)      chips.push(`⑂ ${repo.forks_count}`);
 
-				<ul class="skill-bars">
-				   <li>
-				   	<div class="progress percent90"><span>90%</span></div>
-				   	<strong>C++</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent95"><span>95%</span></div>
-				   	<strong>HTML5</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent85"><span>85%</span></div>
-				   	<strong>CSS3</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent75"><span>75%</span></div>
-				   	<strong>Javascript</strong>
-				   </li>
-     
-				</ul> 	
+  card.innerHTML = `
+    <div class="project-tag">${tag}</div>
+    <div class="project-header">
+      <h3>${fmtName(repo.name)}</h3>
+      <a href="${href}" target="_blank" class="project-link" aria-label="View project">${EXTERNAL_SVG}</a>
+    </div>
+    <p>${desc}</p>
+    <div class="project-tech">${chips.map(c => `<span>${c}</span>`).join('')}</div>`;
 
-   		</div>
+  applyCardTilt(card);
+  return card;
+}
 
-   	</div>
+async function loadGitHubProjects() {
+  const grid = document.getElementById('projects-grid');
+  try {
+    const res   = await fetch(`https://api.github.com/users/${GITHUB_USER}/repos?sort=updated&per_page=20&type=public`);
+    if (!res.ok) throw new Error(res.status);
+    const repos = await res.json();
 
-		<h1 style="text-align: center;">Projects</h1>
-	   <div class="container">
-				
-		 <div class="project">
+    // Exclude forks
+    const own      = repos.filter(r => !r.fork);
+    const featured = own.find(r => r.name === FEATURED_REPO);
+    const rest     = own.filter(r => r.name !== FEATURED_REPO);
 
-				<h2>Random Quote Generator</h2>
-			
-				<p>A web application that generates random famous quotes with the ability to tweet them out.</p>
-			
-				<a href="https://scifi-shinobi.github.io/quote-generator/" target="_blank">View Random Quote App</a>
-			
-			</div>
-			<div class="project">
+    grid.innerHTML = '';
+    if (featured) grid.appendChild(buildCard(featured, true));
+    rest.forEach(r => grid.appendChild(buildCard(r)));
 
-				<h2>Pinspire - Infinite Image Scroll</h2>
-				
-				<p>An smoothly scrolling web app displaying random, creative images from Unsplash. Plans to integrate additional features like searching/filtering.</p>
-			
-				<a href="https://scifi-shinobi.github.io/pinspire/" target="_blank">View Pinspire App</a>
-			
-			</div>
-		
-			<div class="project">
+    if (!grid.children.length) {
+      grid.innerHTML = '<p style="color:var(--text-muted);grid-column:1/-1;padding:2rem 0">No public repos found yet.</p>';
+    }
+  } catch (err) {
+    console.error('GitHub fetch failed:', err);
+    grid.innerHTML = `
+      <div style="grid-column:1/-1;text-align:center;padding:3rem;color:var(--text-muted)">
+        <p style="margin-bottom:1.5rem">⚠️ Could not load projects right now — check back soon.</p>
+        <a href="https://github.com/${GITHUB_USER}" target="_blank" class="btn-ghost">View on GitHub →</a>
+      </div>`;
+  }
+}
 
-				<h2>Artistic Login/Signup Concept</h2>
-			
-				<p>A visually stunning login and signup page design concept, focused on beautiful and modern UI elements.</p>
-			
-				<a href="https://scifi-shinobi.github.io/form/" target="_blank">View Login Concept</a>
-			
-			</div>
-	   </div>
-</div>
+loadGitHubProjects();
+</script>
 </body>
-
 </html>
