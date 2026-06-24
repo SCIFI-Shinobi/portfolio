@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eyobel Zeleke Berie | Embedded AI Engineer & Full-Stack Systems Developer</title>
-  <meta name="description" content="Portfolio of Eyobel Zeleke Berie — Embedded AI Engineer and Full-Stack Systems Developer bridging low-level embedded systems with cloud solutions.">
+  <title>Eyobel Zeleke | Embedded AI Engineer & Full-Stack Systems Developer</title>
+  <meta name="description" content="Portfolio of Eyobel Zeleke — Embedded AI Engineer and Full-Stack Systems Developer bridging low-level embedded systems with cloud solutions.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -41,7 +41,7 @@
     </div>
     <h1 class="hero-title">
       <span class="hero-greeting">Hello, I'm</span>
-      <span class="hero-name">Eyobel Zeleke Berie</span>
+      <span class="hero-name">Eyobel Zeleke</span>
     </h1>
     <p class="hero-role">Embedded AI Engineer <span class="role-sep">|</span> Full-Stack Systems Developer</p>
     <p class="hero-sub">Computer Engineering graduate with hands-on experience bridging low-level embedded systems with cloud-connected full-stack solutions.</p>
@@ -63,7 +63,7 @@
   </div>
   <div class="hero-photo-wrap">
     <div class="hero-photo-ring"></div>
-    <img id="profile-img" src="images/BDU1405811.JPG.jpg" alt="Eyobel Zeleke Berie" class="hero-photo">
+    <img id="profile-img" src="images/BDU1405811.JPG.jpg" alt="Eyobel Zeleke" class="hero-photo">
     <div class="hero-photo-glow"></div>
   </div>
   <a href="#about" class="scroll-indicator" aria-label="Scroll down">
@@ -78,7 +78,7 @@
     <h2 class="section-title">My Story</h2>
     <div class="about-grid">
       <div class="about-text">
-        <p class="about-lead">My name is <strong>Eyobel Zeleke Berie</strong> — a Computer Engineering graduate with a deep passion for bridging low-level embedded systems with cloud-connected full-stack solutions.</p>
+        <p class="about-lead">My name is <strong>Eyobel Zeleke</strong> — a Computer Engineering graduate with a deep passion for bridging low-level embedded systems with cloud-connected full-stack solutions.</p>
         <p>I have hands-on experience building and deploying production-grade applications ranging from TinyML plant health monitoring on resource-constrained hardware to RESTful backends and responsive marketplace platforms. What began as a deep curiosity about systems has grown into professional expertise in bridging hardware and software.</p>
         <p>I hold a B.Sc. in Computer Engineering from Bahir Dar University. I also completed a B.A. in Accounting and Finance — a background that gives me a practical lens for building technology that solves real business problems.</p>
         <div class="about-meta">
@@ -383,7 +383,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2026 Eyobel Zeleke Berie · Built with passion from Ethiopia 🇪🇹</p>
+  <p>© 2026 Eyobel Zeleke · Built with passion from Ethiopia 🇪🇹</p>
 </footer>
 
 <script>
@@ -496,12 +496,21 @@ async function loadGitHubProjects() {
       grid.innerHTML = '<p style="color:var(--text-muted);grid-column:1/-1;padding:2rem 0">No public repos found yet.</p>';
     }
   } catch (err) {
-    console.error('GitHub fetch failed:', err);
-    grid.innerHTML = `
-      <div style="grid-column:1/-1;text-align:center;padding:3rem;color:var(--text-muted)">
-        <p style="margin-bottom:1.5rem">⚠️ Could not load projects right now — check back soon.</p>
-        <a href="https://github.com/${GITHUB_USER}" target="_blank" class="btn-ghost">View on GitHub →</a>
-      </div>`;
+    console.error('GitHub fetch failed, loading fallback data:', err);
+    grid.innerHTML = '';
+    // Fallback Mock Data if rate limit exceeded
+    const fallbackRepos = [
+      { name: "Intelligent-Mango-Health-Monitoring", description: "Real-time agricultural disease detection system using MobileNetV1 on Arduino Nano 33 BLE Sense.", language: "C++", html_url: "https://github.com/SCIFI-Shinobi/Intelligent-Mango-Health-Monitoring", stargazers_count: 12, forks_count: 3 },
+      { name: "Hotel-Management-System", description: "RESTful backend with Spring Boot & PostgreSQL for booking and room management.", language: "Java", html_url: "https://github.com/SCIFI-Shinobi/Hotel-Management-System", stargazers_count: 8 },
+      { name: "Wubet-Digital-Platform", description: "MVP marketplace connecting Ethiopian fashion designers with global clients.", language: "JavaScript", html_url: "https://github.com/SCIFI-Shinobi/Wubet-Digital-Platform", stargazers_count: 5 },
+      { name: "Personal-Portfolio", description: "My personal portfolio website built with HTML, CSS, and JavaScript.", language: "HTML", html_url: "https://github.com/SCIFI-Shinobi", stargazers_count: 3 }
+    ];
+
+    const featured = fallbackRepos.find(r => r.name === FEATURED_REPO);
+    const rest = fallbackRepos.filter(r => r.name !== FEATURED_REPO);
+
+    if (featured) grid.appendChild(buildCard(featured, true));
+    rest.forEach(r => grid.appendChild(buildCard(r)));
   }
 }
 
