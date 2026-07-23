@@ -537,10 +537,12 @@ async function loadGitHubProjects() {
     grid.innerHTML = '';
     // Fallback Mock Data if rate limit exceeded
     const fallbackRepos = [
-      { name: "Intelligent-Mango-Health-Monitoring", description: "Real-time agricultural disease detection system using MobileNetV1 on Arduino Nano 33 BLE Sense.", language: "C++", html_url: "https://github.com/SCIFI-Shinobi/Intelligent-Mango-Health-Monitoring", stargazers_count: 12, forks_count: 3 },
-      { name: "Hotel-Management-System", description: "RESTful backend with PostgreSQL for booking and room management.", language: "Java", html_url: "https://github.com/SCIFI-Shinobi/Hotel-Management-System", stargazers_count: 8 },
-      { name: "Wubet-Digital-Platform", description: "MVP marketplace connecting Ethiopian fashion designers with global clients.", language: "JavaScript", html_url: "https://github.com/SCIFI-Shinobi/Wubet-Digital-Platform", stargazers_count: 5 },
-      { name: "Personal-Portfolio", description: "My personal portfolio website built with HTML, CSS, and JavaScript.", language: "HTML", html_url: "https://github.com/SCIFI-Shinobi", stargazers_count: 3 }
+      { name: "Intelligent-Mango-Health-Monitoring", description: "Real-time agricultural disease detection system using MobileNetV1 on Arduino Nano 33 BLE Sense with FastAPI backend and React dashboard.", language: "C++", html_url: "https://github.com/SCIFI-Shinobi/Intelligent-Mango-Health-Monitoring", stargazers_count: 12, forks_count: 3 },
+      { name: "ig-unfollowers", description: "A tool to track Instagram accounts that don't follow you back — built with HTML, CSS and JavaScript.", language: "HTML", html_url: "https://github.com/SCIFI-Shinobi/ig-unfollowers" },
+      { name: "ezApply", description: "Automated job application assistant that streamlines the application process using Python.", language: "Python", html_url: "https://github.com/SCIFI-Shinobi/ezApply" },
+      { name: "ApplyFlow", description: "Smart job application tracking and automation pipeline built with Python.", language: "Python", html_url: "https://github.com/SCIFI-Shinobi/ApplyFlow" },
+      { name: "Cloud-Task-Manager", description: "Cloud-connected task management system with C backend and RESTful API integration.", language: "C", html_url: "https://github.com/SCIFI-Shinobi/Cloud-Task-Manager", stargazers_count: 1 },
+      { name: "portfolio", description: "My personal portfolio website — Embedded AI Engineer and Full-Stack Systems Developer.", language: "HTML", html_url: "https://github.com/SCIFI-Shinobi/portfolio", homepage: "https://eyobelz-portfolio.vercel.app" }
     ];
 
     const featured = fallbackRepos.find(r => r.name === FEATURED_REPO);
